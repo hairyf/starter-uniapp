@@ -7,7 +7,8 @@ onShow(() => console.log('App Show'))
 onHide(() => console.log('App Hide'))
 </script>
 
-<style>
+<style lang="scss">
+@import 'uview-pro/index.scss';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

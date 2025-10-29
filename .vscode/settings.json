@@ -61,6 +61,7 @@
     "**/tsconfig.json": true,
     "**/pages.json": true,
     "**/postcss.config.ts": true,
-    "**/manifest.json": true
+    "**/manifest.json": true,
+    "src/node_modules": true
   }
 }
