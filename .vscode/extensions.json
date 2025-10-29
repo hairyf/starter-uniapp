@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "bradlc.vscode-tailwindcss",
+    "lokalise.i18n-ally",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
