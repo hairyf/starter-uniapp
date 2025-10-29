@@ -1,5 +1,5 @@
 {
-  "name": "uni-preset-vue",
+  "name": "uni-preset-starter",
   "version": "0.0.0",
   "packageManager": "pnpm@10.17.1",
   "scripts": {
