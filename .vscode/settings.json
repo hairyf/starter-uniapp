@@ -59,6 +59,8 @@
     "**/index.html": true,
     "**/shime-uni.d.ts": true,
     "**/tsconfig.json": true,
-    "**/postcss.config.ts": true
+    "**/pages.json": true,
+    "**/postcss.config.ts": true,
+    "**/manifest.json": true
   }
 }
