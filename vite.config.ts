@@ -25,7 +25,7 @@ export default defineConfig(async () => {
       }),
       Pages({ dts: 'src/types/uni-pages.d.ts' }),
       AutoImport({
-        imports: ['vue', '@vueuse/core'],
+        imports: ['vue', '@vueuse/core', 'uni-app'],
         dts: 'src/types/auto-imports.d.ts',
         dirs: ['src/composables', 'src/store'],
         eslintrc: { enabled: true },
@@ -38,6 +38,7 @@ export default defineConfig(async () => {
     css: {
       preprocessorOptions: {
         scss: {
+          silenceDeprecations: ['legacy-js-api'],
           additionalData: '@import "@/uview.scss";',
         },
       },

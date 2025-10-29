@@ -96,6 +96,15 @@ importers:
       '@dcloudio/vite-plugin-uni':
         specifier: 3.0.0-4070620250821001
         version: 3.0.0-4070620250821001(@vueuse/core@14.0.0(vue@3.5.22(typescript@4.9.5)))(postcss@8.5.6)(rollup@4.52.5)(vite@5.2.8(@types/node@24.9.1)(lightningcss@1.30.2)(sass@1.63.2)(terser@5.44.0))(vue@3.5.22(typescript@4.9.5))
+      '@mini-types/alipay':
+        specifier: ^3.0.14
+        version: 3.0.14
+      '@uni-helper/unh':
+        specifier: ^0.2.3
+        version: 0.2.3
+      '@uni-helper/uni-types':
+        specifier: 1.0.0-alpha.6
+        version: 1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(@uni-helper/uni-cloud-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(@uni-helper/uni-ui-types@1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))
       '@uni-helper/vite-plugin-uni-components':
         specifier: ^0.2.3
         version: 0.2.3(rollup@4.52.5)
@@ -126,6 +135,9 @@ importers:
       lint-staged:
         specifier: ^16.2.6
         version: 16.2.6
+      miniprogram-api-typings:
+        specifier: ^4.1.0
+        version: 4.1.0
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -1914,6 +1926,15 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
+  '@mini-types/alipay@3.0.14':
+    resolution: {integrity: sha512-FakzSsKvybtWlEIVTIRlr89kuQFn+XY86Ho9VUFFaKLplhW6Wx8FUxTDE7IzV7B9rT8DP/Icy637vUHlXPsw1g==}
+
+  '@mini-types/global@3.0.14':
+    resolution: {integrity: sha512-St2ucFRfKRskposOqV/9iNJTKn1MbyqDypQiy/0DaVJjEm2MFi82RJjX9sBz1uWhQIqzu741PgTjGSy7L/Qj9g==}
+
+  '@mini-types/my@3.0.14':
+    resolution: {integrity: sha512-aEgmM+rbEvEzTvqltCFRAg/h6KKs14M1y+FrOkz+hn2EyNpOVPesUzTjbRhSiFFsE3WdfBh54lHNYBahAmHq7w==}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -2220,8 +2241,44 @@ packages:
     resolution: {integrity: sha512-tUFMXI4gxzzMXt4xpGJEsBsTox0XbNQ1y94EwlD/CuZwFcQP79xfQqMhau9HsRc/J0cAPA/HZt1dZPtGn9V/7w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@uni-helper/unh@0.2.3':
+    resolution: {integrity: sha512-uioHeLp0Aw458jAzE3B/uKMAeqpx5EVP2nmAmZSZaIA+kGg5B9zNruMfIK/tDmWdxRyA2/3vbrMWh6cYjXc68Q==}
+    hasBin: true
+
+  '@uni-helper/uni-app-types@1.0.0-alpha.6':
+    resolution: {integrity: sha512-t9AKDYBmDaz4IW0fgtBt25ubEzf7kyUeMlHaBaG5nyNGd6pVuDpYkABhsnNPDiZcaHAoN6SbX1SQQx5axDOWbA==}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      typescript: ^5.0.0
+      vue: ^3.0.0
+
+  '@uni-helper/uni-cloud-types@1.0.0-alpha.6':
+    resolution: {integrity: sha512-xnLiRcqf14NXcmkcekF3BbN0O157WROpzHfyKVAeLhcXRhO0HIRUMy0+h9KnCDZ+LFteeIOZXJWC5ere3yhIiQ==}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      typescript: ^5.0.0
+      vue: ^3.0.0
+
   '@uni-helper/uni-env@0.1.8':
     resolution: {integrity: sha512-oZQisgM5sFarGrswKHJvS5S7xNMXLjcBcPTKp2gzLMon+chdHiKua1+Hlqe/NX79Re35W4A6/QHDrw9cZ5AVGQ==}
+
+  '@uni-helper/uni-types@1.0.0-alpha.6':
+    resolution: {integrity: sha512-lGSm3RUOQThyYIUuJI46b8ug3nGZMyRfMQ/ktOGNxOXBukGA1TF1TN2m4MjKUklIQ+kiIuIgZJoU3S7oIK5emw==}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      '@uni-helper/uni-app-types': 1.0.0-alpha.6
+      '@uni-helper/uni-cloud-types': 1.0.0-alpha.6
+      '@uni-helper/uni-ui-types': 1.0.0-alpha.6
+      typescript: ^5.0.0
+      vue: ^3.0.0
+
+  '@uni-helper/uni-ui-types@1.0.0-alpha.6':
+    resolution: {integrity: sha512-2KuAup2M7rPVzpLaXhhnxCD/Cs5VQYiqzC9XNI/VZuA88+ApPmHzkwyS0THSHnz1VbDIGX/Ju69nj+mApfYKDw==}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      '@uni-helper/uni-app-types': 1.0.0-alpha.6
+      typescript: ^5.0.0
+      vue: ^3.0.0
 
   '@uni-helper/vite-plugin-uni-components@0.2.3':
     resolution: {integrity: sha512-in7jRYQnPkLg6W13dzz8mzHDuZC+OFc3qb8MrnmDQgniIxHfxJw8vaibL1au6gvq7ij3h6EHvhHaRytIJ2PkYw==}
@@ -2678,6 +2735,11 @@ packages:
 
   birpc@2.6.1:
     resolution: {integrity: sha512-LPnFhlDpdSH6FJhJyn4M0kFO7vtQ5iPw24FnG0y21q09xC7e8+1LeR31S1MAIrDAHp4m7aas4bEkTDTvMAtebQ==}
+
+  blessed@0.1.81:
+    resolution: {integrity: sha512-LoF5gae+hlmfORcG1M5+5XZi4LBmvlXTzwJWzUlPryN/SJdSflZvROM2TwkT0GMpq7oqT48NRd4GS7BiVBc5OQ==}
+    engines: {node: '>= 0.8.0'}
+    hasBin: true
 
   bmp-js@0.1.0:
     resolution: {integrity: sha512-vHdS19CnY3hwiNdkaqk93DvjVLfbEcI8mys4UjuWrlX1haDmroo8o4xCzh4wD6DGV6HxRCyauwhHRqMTfERtjw==}
@@ -4576,6 +4638,9 @@ packages:
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
+
+  miniprogram-api-typings@4.1.0:
+    resolution: {integrity: sha512-4RBsz27nBKyRkVGoNkRaPx24/KeJBw3zaaIlXDR8s/WBh2PbcUAc+q7wLLbp7Qsmb3bLzzUu7tqAti+B06kmjg==}
 
   minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
@@ -8673,6 +8738,15 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
+  '@mini-types/alipay@3.0.14':
+    dependencies:
+      '@mini-types/global': 3.0.14
+      '@mini-types/my': 3.0.14
+
+  '@mini-types/global@3.0.14': {}
+
+  '@mini-types/my@3.0.14': {}
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -8990,9 +9064,42 @@ snapshots:
       '@typescript-eslint/types': 8.46.2
       eslint-visitor-keys: 4.2.1
 
+  '@uni-helper/unh@0.2.3':
+    dependencies:
+      blessed: 0.1.81
+      cac: 6.7.14
+      cross-spawn: 7.0.6
+      kolorist: 1.8.0
+      local-pkg: 1.1.2
+      unconfig: 7.3.3
+
+  '@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))':
+    dependencies:
+      typescript: 4.9.5
+      vue: 3.5.22(typescript@4.9.5)
+
+  '@uni-helper/uni-cloud-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))':
+    dependencies:
+      typescript: 4.9.5
+      vue: 3.5.22(typescript@4.9.5)
+
   '@uni-helper/uni-env@0.1.8':
     dependencies:
       std-env: 3.10.0
+
+  '@uni-helper/uni-types@1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(@uni-helper/uni-cloud-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(@uni-helper/uni-ui-types@1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))':
+    dependencies:
+      '@uni-helper/uni-app-types': 1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))
+      '@uni-helper/uni-cloud-types': 1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))
+      '@uni-helper/uni-ui-types': 1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))
+      typescript: 4.9.5
+      vue: 3.5.22(typescript@4.9.5)
+
+  '@uni-helper/uni-ui-types@1.0.0-alpha.6(@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5)))(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))':
+    dependencies:
+      '@uni-helper/uni-app-types': 1.0.0-alpha.6(typescript@4.9.5)(vue@3.5.22(typescript@4.9.5))
+      typescript: 4.9.5
+      vue: 3.5.22(typescript@4.9.5)
 
   '@uni-helper/vite-plugin-uni-components@0.2.3(rollup@4.52.5)':
     dependencies:
@@ -9623,6 +9730,8 @@ snapshots:
   binary-extensions@2.3.0: {}
 
   birpc@2.6.1: {}
+
+  blessed@0.1.81: {}
 
   bmp-js@0.1.0: {}
 
@@ -11969,6 +12078,8 @@ snapshots:
   minipass@5.0.0: {}
 
   minipass@7.1.2: {}
+
+  miniprogram-api-typings@4.1.0: {}
 
   minizlib@2.1.2:
     dependencies:

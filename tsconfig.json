@@ -14,8 +14,10 @@
     "resolveJsonModule": true,
     "types": [
       "vite/client",
-      "@dcloudio/types",
+      "@mini-types/alipay",
       "@uni-helper/vite-plugin-uni-pages",
+      "@uni-helper/uni-types",
+      "miniprogram-api-typings",
       "uview-pro/types"
     ],
     "strict": true,

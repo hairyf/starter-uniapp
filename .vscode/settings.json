@@ -58,7 +58,7 @@
     "**/.eslintrc-auto-import.json": true,
     "**/index.html": true,
     "**/shime-uni.d.ts": true,
-    "**/tsconfig.json": true,
+    // "**/tsconfig.json": true,
     "**/pages.json": true,
     "**/postcss.config.ts": true,
     "**/manifest.json": true,
